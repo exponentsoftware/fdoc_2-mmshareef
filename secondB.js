@@ -59,3 +59,11 @@ const users = [
         console.log(users);
     }
 addNewUser(users);
+
+function addNewSkill(){
+        users.forEach(user => {
+            if(user.name === 'Martha'){ user.skills[2] = 'singing'}
+        });
+        console.log(users)
+    }
+ addNewSkill(users)
