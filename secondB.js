@@ -1,4 +1,4 @@
-///get users
+
 const users = [
 	{
 		name:'Brook', 
@@ -42,15 +42,20 @@ const users = [
 		skills:['HTM', 'CSS', 'JS'],
 		age:20
 	}
-];
-    
-function scoresGreaterThan85(users) {
-    //use filter method
-    const higherThan85 = users.filter(users => users.scores > 85);
-    return higherThan85;
+	];
+
+    // function add new uder
+    function addNewUser(){
+			 users.forEach(user => {
+			// check if user already exists
+		    // add user if user doesnt already existsfunction addNewUser(){
+            if(user.name !== 'kcr'){
+                users.name = "kcr",
+                users.scores = 36,
+                users.skills= ['php','JS'],
+                users.age = 89
+            }
+        });
+        console.log(users);
     }
-
-    
-
-console.log(scoresGreaterThan85(users));
-
+addNewUser(users);
